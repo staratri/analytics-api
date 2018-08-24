@@ -1,0 +1,7 @@
+
+// "should create user /user/create"
+// "a user should login /login"
+// "should return user profile of the current user /users/me"
+// "should return user profile by id /users/(:id)"
+// "should return user list/users"
+// "should change user status to 2 /users/delete/(:id)"

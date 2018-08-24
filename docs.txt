@@ -1,0 +1,55 @@
+for saveing custom likes, comments and followers.
+
+///***///
+
+End points (post request)-
+'/media/likes/count'  = likes,
+'/media/comments/count' = comments,
+'/user/followers/count' = followers
+
+///***///
+
+likes => '/media/likes/count'
+{Data required in req},
+{
+	mediaId : String,
+	userId : String,
+	count: Number
+}
+ex=> {
+	"mediaId" : "12342143cx",
+	"userId": "32423423iub",
+	"count": 103
+}
+
+
+comments => '/media/comments/count'
+{Data required in req},
+{
+	mediaId : String,
+	userId : String,
+	count: Number
+}
+ex=> {
+	"mediaId" : "12342143cx",
+	"userId": "32423423iub",
+	"count": 47
+}
+
+
+followers => '/user/followers/count'
+{Data required in req},
+{
+	userId : String,
+	count: Number
+}
+ex=> {
+	"userId": "32423423iub",
+	"count": 35
+}
+
+
+Saves data in collections()
+[likes = customlikes]
+[comments = customcomments]
+[followers = customfollowers]
